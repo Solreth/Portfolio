@@ -1,0 +1,33 @@
+
+    *{ padding: 0px;
+        margin: 0px
+    }
+    body{
+        background: #ffffff;
+    }
+
+    .nav h4{
+        text-align: left
+    }
+    .nav{
+        background: rgba(0, 0, 0, 0.685);
+        padding: 10px 0px;
+        text-align: right;
+        line-height: 30px;
+    }
+
+    .nav li{
+        
+        list-style-type: none;
+        display: inline-block;
+        padding: 10px 40px;
+        text-align: center;
+        border-left: 1px solid white;
+        color: white;
+        font-size: 18px;
+    }
+    @media only screen and (max-width: 600px) {
+    .nav {
+      background-color: rgb(203, 14, 187);
+    }
+  }
