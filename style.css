@@ -614,7 +614,19 @@ justify-content:space-between
     height: 100vh;
   }
 }
+@media screen and (max-width: 330px){
+.spacing{
+font-size: 1.2em
+}
 
+.extra{font-size:1.2em}
+
+.adjust{font-size: 1.2em}
+
+.cardContainer{
+  width: 90%
+}
+}
 
 /***** KEYFRAMES / ANIMATIONS *****/
 @keyframes navLinkFade {
