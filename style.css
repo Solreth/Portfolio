@@ -5,6 +5,7 @@
   --main-grey: rgba(17, 17, 17, 0.9);
   --secondary-grey: rgba(17, 17, 17, 0.9);
   --light-grey: #3c3c44;
+  --light-green: #249224;
   --green: #195d19;
   --dark-green: #092809;
   --offWhite: #e6e6e6;
@@ -82,7 +83,7 @@ a {
 }
 
 #nickname{
-  color:var(--green)
+  color:var(--light-green)
 }
 /*** NAVIGATION ***/
 nav {
