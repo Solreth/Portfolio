@@ -311,8 +311,12 @@ h1{
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 50%
+  width: 35%;
+  border-radius: 100%;
+  border: solid 2px green;
+  margin-top: 4vh
 }
+
 
 /*** PROJECT CARDS ***/
 #cardGrid {
