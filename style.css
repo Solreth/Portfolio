@@ -46,7 +46,7 @@ a {
   border: 2px solid var(--offWhite);
   color: var(--offWhite);
   padding: 0.5em;
-  font-size: 1em;
+  font-size: .9em;
   border-radius: 5px;
   transition: 0.2s ease-in;
   animation-duration: 1.6s;
@@ -69,10 +69,15 @@ a {
 
 .sectionHeading {
   font-size: 3em;
-  margin: 20px;
+  margin: 1rem;
   font-weight: normal;
   text-align: center
   ;
+}
+
+.spacing{
+ margin-top: 4rem;
+ margin-bottom: 4rem 
 }
 
 .sectionInfo {
@@ -333,7 +338,8 @@ h1{
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 3rem;
+  margin-bottom: 5rem;
+  margin-top: 5rem
 }
 
 .card {
@@ -341,7 +347,7 @@ h1{
 }
 
 .cardTitle {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
 }
 
 .cardBody {
@@ -359,8 +365,8 @@ h1{
 }
 
 .projectImageWrapper {
-  width: 300px;
-  height: 300px;
+  width: 18.75em;
+  height: 17em;
   
 }
 
@@ -404,6 +410,8 @@ justify-content:space-between
   margin-bottom: 15px;
 }
 
+.skill{ font-size: 1em;}
+
 .skillsList {
   margin-top: 5px;
   list-style: none;
@@ -411,9 +419,11 @@ justify-content:space-between
 
 .skillsList li{
   border: 1px solid var(--background);
-  padding: 12px;
+  padding: 10px;
   background-color: var(--light-grey);
 }
+
+.skillsUsed{ font-size: 1.1em}
 
 /*** CONTACT SECTION ***/
 .contact {
@@ -452,6 +462,32 @@ justify-content:space-between
   body {
     overflow-x: hidden;
   }
+
+  .cardContainer{
+    margin-top: 3rem
+  }
+
+
+  .spacing{
+    margin-top: 1.5rem;
+    margin-bottom: 0rem 
+   }
+
+  .skillsUsed{ font-size: .95em}
+
+  .skillsList li{
+   
+    padding: 6px;
+    
+  }
+
+  .skill{ font-size: .8em;}
+
+  .buttonWrapper{margin:0}
+  
+  .btn{margin:9}
+  
+  .projectImageWrapper {height: 13em;}
 
   h4{
     font-size:3vw
@@ -531,8 +567,18 @@ justify-content:space-between
   }
 
   .buttonWrapper .btn{
-    margin-bottom: 1rem;
+    margin: .5rem;
   }
+
+  .description{
+    font-size:smaller
+  }
+
+  .cardTitle{
+    font-size: 1rem
+  }
+  
+  .btn{font-size:smaller}
 }
 
 @media screen and (max-width: 400px) {
