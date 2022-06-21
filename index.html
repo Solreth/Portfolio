@@ -4,95 +4,251 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <meta author="Jon Sol Lackey">
-  <meta name="description" content="Jon Sol Lackey Web Development Portfolio">
-  <meta name="keywords" content="Jon Sol Lackey, Web Development, Development, Web Developer">
+  <meta author="Jon 'Sol' Lackey">
+  <meta name="description" content="Jon 'Sol' Lackey Full-Stack Development Portfolio">
+  <meta name="keywords" content="Jon 'Sol' Lackey, Full-Stack Development, Development, Full-Stack Developer">
 
-  <style>
-    *{ padding: 0px;
-        margin: 0px
-        
-    }
-    body{
-        background-color: rgb(14, 14, 14);
-        color: white;
-    }
-    .header{width:100%; line-height: 100px}
-    .header h1{
-        padding: 10px;
-        font-size: 30px;
-        color: green
-    }
-
-    .nav{
-        background-color: rgb(203, 14, 187)
-        
-    }
-
-    .nav li{
-        
-        list-style-type: none;
-        display: inline-block;
-        padding: 10px 40px;
-        text-align: center;
-        border-left: 1px solid white;
-        color: white;
-        font-size: 18px;
-    }
-    @media only screen and (min-width: 693px) {
-    .nav {
-        background: rgba(0, 0, 0, 0.685);
-        padding: 0px 0px;
-        text-align: right;
-        line-height: 30px;
-    }
-  }
-  </style>
   
 
-  <link 
-  rel="stylesheet" 
-  href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" 
-  integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous"
->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
 
   <link 
     rel="stylesheet" 
+    href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" 
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous"
+  >
+  <link 
+    rel="stylesheet" 
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.css"/>
-  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="style.css" />
+
+  <link rel="icon" href="./images/sol-logo.png">
 
   <title>Hire This Guy!</title>
 </head>
 
 <body>
   <!--*** NAVIGATION ***-->
-  <div class="header">
-    <div class="title"><h1>Jon "Sol" Lackey</h1></div>
-  <nav class="nav" id="nav">
+  <nav>
+    <div class="logo">
+      <!-- <div class="logoContainer"> -->
+      <img class="logoImg" src="/images/sol-logo.png" alt="Sol-Logo">
+      <!-- </div> -->
+      <div class="headerTitle">
+      <h4 class="mark">Jon "<span id="nickname">Sol</span>" Lackey</h4>
+      </div>
+    </div>
     <ul class="navLinks">
-      <li><a href="#">Home</a></li>
-      <li><a href="#myWork">My Work</a></li>
-      <li><a href="#aboutMe">About</a></li>
-      <li><a href="#contact">Contact</a></li>
-      <li><a href="/Resume.pdf" target="_blank">Resume</a></li>
+      <li><a  href="#">Home</a></li>
+      <li><a  href="#aboutMe">About</a></li>
+      <li><a  href="#Projects">Projects</a></li>
+      <li><a  href="#contact">Contact</a></li>
+      <li><a  href="/Resume.pdf" target="_blank">Resume</a></li>
     </ul>
+    
+    <div class="burger">
+      <div class="line1"></div>
+      <div class="line2"></div>
+      <div class="line3"></div>
+    </div>
+
   </nav>
-</div>
+
   <!--*** LANDING ***-->
-  
   <section id="landing">
     <div class="landingOverlay">
       <header>
-        <h1 id="title">Jon "Sol" Lackey</h1>
-        <p id="subHeading">Web Developer</p>
+        
+        <h1 id="title mark">Jon "<span id="nickname">Sol</span>" Lackey</h1>
+        <p id="subHeading" >Full-Stack Developer</p>
         <div class="landingButtons">
-          <a href="#myWork" class="btn animated slideInLeft" id="projectBtn">
+          <a href="#Projects" class="btn animated slideInLeft" id="projectBtn">
             View Projects
           </a>
           <a href="/Resume.pdf" target="_blank" class="btn animated slideInRight" id="resumeBtn">
             View Resume
           </a>
         </div>
+        <ul class="icons">
+          <li>
+            <a
+              class="contactIcon animated bounceInDown githubLink"
+              href="https://github.com/Solreth"
+              target="_blank"
+              rel="noopener"
+            >
+              <i class="fab fa-github-alt" title="Github Logo"></i>
+            </a>
+          </li>
+          <li>
+            <a
+              class="contactIcon animated bounceInDown linkedInLink"
+              href="https://www.linkedin.com/in/jon-lackey"
+              target="_blank"
+              rel="noopener"
+            >
+              <i class="fab fa-linkedin" title="LinkedIn Logo"></i>
+            </a>
+          </li>
+        </ul>
+
+        <span class="emailSpan">
+          Email: <a href="mailto:SolSantari@gmail.com" class="emailLink">SolSantari@gmail.com</a>
+        </span>
+
+      </header>
+    </div>
+  </section>
+
+    <!--*** ABOUT ME ***-->
+    <section class="anchor" id="aboutMe">
+      <h2 class="sectionHeading">About Me</h2>
+      <img class="self" src="/images/self.jpg" alt="Image of Sol">
+      <p class="sectionInfo">
+        I'm a Full-Stack developer from Florida with a background in competitive eSports! 
+        I was sponsored as a Brand Ambassador and competitor for Noble eSports for over half a decade! 
+        My old career involved a lot of meticulous design analysis and breakdown under high pressure situations. 
+        That acuity now translates directly into my code, helping me to employ solid problem-solving efficacy in my projects! 
+        I am currently proficient in <span id="nickname">JavaScript</span>, <span id="nickname">HTML</span>, <span id="nickname">CSS</span>, and <span id="nickname">SQL</span>. 
+        I also know my way around <span id="nickname">React</span>, <span id="nickname">Bootstrap</span>, <span id="nickname">Express</span>, <span id="nickname">Postgres</span>, <span id="nickname">Knex</span>, and more!</p>
+    </section>
+
+  <!--*** Projects ***-->
+  <div id="pageContainer">
+    <section class="anchor" id="Projects">
+      <h2 class="sectionHeading">Projects</h2>
+      <div id="cardGrid">
+  
+        <div class="cardContainer">
+          <div class="card">
+            <div class="projectImageWrapper">
+              <img class="screenshot" src="/images/FightingGame.png" alt="Image of Sol's Fighting Game">
+            </div>
+            <div class="cardBody">
+              <p class="cardTitle">Javascript Fighting Game</p>
+              <div class="buttonWrapper">
+                <a
+                  href="https://sols-fighting-friends.netlify.app/"
+                  target="_blank"
+                  rel="noopener"
+                  class="btn"
+                >
+                  View Live Demo
+                </a>
+                <a
+                  href="https://github.com/Solreth/Fighting_Game"
+                  target="_blank"
+                  rel="noopener"
+                  class="btn"
+                >
+                  View Source Code
+                </a>
+              </div>
+              <p class="description">A fighting game and engine built in a week from scratch in Javascript! Controls:
+                WAD(Spacebar) / ArrowKeys(Down) to Move(Attack) with Player 1 / Player 2!
+              </p>
+              <div class="projectSkills">
+                <p>Skills Used:</p>
+                <ul class="skillsList">
+                  <li class="skill">HTML</li>
+                  <li class="skill">CSS</li>
+                  <li class="skill">Javascript</li>
+                  <li class="skill">Aseprite</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <div class="cardContainer">
+          <div class="card">
+            <div class="projectImageWrapper">
+              <img class="screenshot" src="/images/flashcards.png" alt="Screenshot of student flashcards app">
+            </div>
+            <div class="cardBody">
+              <p class="cardTitle">Student Studying Device</p>
+              <div class="buttonWrapper">
+                <a
+                  href="https://www.youtube.com/watch?v=D8C0OlB5Zx4&t"
+                  target="_blank"
+                  rel="noopener"
+                  class="btn"
+                >
+                  View Taped Demo
+                </a>
+                <a
+                  href=""
+                  target="_blank"
+                  rel="noopener"
+                  class="btn"
+                >
+                  View Source Code
+                </a>
+              </div>
+              <p class="description">A student studying device that allows users to create / customize decks of flashcards! A full CRUD application with edit and delete options designed to help students study more efficiently!</p>
+              <div class="projectSkills">
+                <p>Skills Used:</p>
+                <ul class="skillsList">
+                  <li class="skill">React</li>
+                  <li class="skill">HTML</li>
+                  <li class="skill">CSS</li>
+                  <li class="skill">Javascript</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="cardContainer">
+          <div class="card">
+            <div class="projectImageWrapper">
+              <img class="screenshot" src="/images/WeLoveMovies.png" alt="Screenshot of WeLoveMovies API!">
+            </div>
+            <div class="cardBody">
+              <p class="cardTitle">Movies Database and Server</p>
+              <div class="buttonWrapper">
+                <a
+                  href="https://backend-we-love-movies.herokuapp.com/movies"
+                  target="_blank"
+                  rel="noopener"
+                  class="btn"
+                >
+                  View Live Demo
+                </a>
+                <a
+                  href="https://github.com/Solreth/WeLoveMovies"
+                  target="_blank"
+                  rel="noopener"
+                  class="btn"
+                >
+                  View Source Code
+                </a>
+              </div>
+              <div class="projectContainer">
+              <p class="description"> A fully deployed backend server connected to a handmade elephantsql database that stores movies, theaters, and reviews for clients through various http method requests. </p>
+              <div class="projectSkills">
+                <p>Skills Used:</p>
+                <ul class="skillsList">
+                  <li class="skill">SQL</li>
+                  <li class="skill">Knex</li>
+                  <li class="skill">Postgres</li>
+                  <li class="skill">Javascript</li>
+                </ul>
+              </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--*** CONTACT ***-->
+    <section class="anchor" id="contact">
+      <h2 class="sectionHeading adjust">Contact</h2>
+
+      <div class="contact">
         <ul class="icons">
           <li>
             <a
@@ -115,204 +271,9 @@
             </a>
           </li>
         </ul>
-
-        <span class="emailSpan">
-          Email: <a href="mailto:SolSantari@gmail.com" class="emailLink">SolSantari@gmail.com</a>
-        </span>
-
-      </header>
-    </div>
-  </section>
-
-  <!--*** MY WORK ***-->
-  <div id="pageContainer">
-    <section id="myWork">
-      <h2 class="sectionHeading">Projects</h2>
-      <div id="cardGrid">
-        <div class="cardContainer">
-          <div class="card">
-            <div class="projectImageWrapper">
-              <img class="screenshot" src="/images/weightTracker.png" alt="Weight Tracker project screenshot">
-            </div>
-            <div class="cardBody">
-              <p class="cardTitle">Weight Tracker</p>
-              <div class="buttonWrapper">
-                <a
-                  href=""
-                  target="_blank"
-                  rel="noopener"
-                  class="btn"
-                >
-                  View Live Demo
-                </a>
-                <a
-                  href=""
-                  target="_blank"
-                  rel="noopener"
-                  class="btn"
-                >
-                  View on Github
-                </a>
-              </div>
-              <p class="description">Site that tracks and charts users fitness aspects</p>
-              <div class="projectSkills">
-                <p>Skills Used:</p>
-                <ul class="skillsList">
-                  <li class="skill">MongoDB</li>
-                  <li class="skill">Express</li>
-                  <li class="skill">React</li>
-                  <li class="skill">Node.js</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div id="pageContainer">
-            <section id="myWork">
-              <h2 class="sectionHeading">Projects</h2>
-              <div id="cardGrid">
-                <div class="cardContainer">
-                  <div class="card">
-                    <div class="projectImageWrapper">
-                      <img class="screenshot" src="/images/weightTracker.png" alt="Weight Tracker project screenshot">
-                    </div>
-                    <div class="cardBody">
-                      <p class="cardTitle">Weight Tracker</p>
-                      <div class="buttonWrapper">
-                        <a
-                          href=""
-                          target="_blank"
-                          rel="noopener"
-                          class="btn"
-                        >
-                          View Live Demo
-                        </a>
-                        <a
-                          href=""
-                          target="_blank"
-                          rel="noopener"
-                          class="btn"
-                        >
-                          View on Github
-                        </a>
-                      </div>
-                      <p class="description">Site that tracks and charts users fitness aspects</p>
-                      <div class="projectSkills">
-                        <p>Skills Used:</p>
-                        <ul class="skillsList">
-                          <li class="skill">MongoDB</li>
-                          <li class="skill">Express</li>
-                          <li class="skill">React</li>
-                          <li class="skill">Node.js</li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div id="pageContainer">
-                    <section id="myWork">
-                      <h2 class="sectionHeading">Projects</h2>
-                      <div id="cardGrid">
-                        <div class="cardContainer">
-                          <div class="card">
-                            <div class="projectImageWrapper">
-                              <img class="screenshot" src="/images/weightTracker.png" alt="Weight Tracker project screenshot">
-                            </div>
-                            <div class="cardBody">
-                              <p class="cardTitle">Weight Tracker</p>
-                              <div class="buttonWrapper">
-                                <a
-                                  href=""
-                                  target="_blank"
-                                  rel="noopener"
-                                  class="btn"
-                                >
-                                  View Live Demo
-                                </a>
-                                <a
-                                  href=""
-                                  target="_blank"
-                                  rel="noopener"
-                                  class="btn"
-                                >
-                                  View on Github
-                                </a>
-                              </div>
-                              <p class="description">Site that tracks and charts users fitness aspects</p>
-                              <div class="projectSkills">
-                                <p>Skills Used:</p>
-                                <ul class="skillsList">
-                                  <li class="skill">MongoDB</li>
-                                  <li class="skill">Express</li>
-                                  <li class="skill">React</li>
-                                  <li class="skill">Node.js</li>
-                                </ul>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-       
-
-    <!--*** ABOUT ME ***-->
-    <section id="aboutMe">
-      <h2 class="sectionHeading">About Me</h2>
-      <p class="sectionInfo">
-        Filler Blah Blah Blah
-      </p>
-    </section>
-
-    <!--*** CONTACT ***-->
-    <section id="contact">
-      <h2 class="sectionHeading">Get In Touch</h2>
-      <p class="sectionInfo">
-        Filler2 Blah Blah Blah
-      </p>
-
-      <form action='/thankyou' method='post' name='contactForm'><input type='hidden' name='form-name' value='contactForm' />
-        <div class="formGroup">
-          <label for="name">Name</label>
-          <input type="text" name="name" id="name" placeholder="Enter Name..." required>
-        </div>
-
-        <div class="formGroup">
-          <label for="email">Email</label>
-          <input type="email" name="email" id="email" placeholder="Enter Email..." required>
-        </div>
-
-        <div class="form-group">
-          <label for="message">Message</label>
-          <textarea name="message" id="message" placeholder="Message..." cols="30" rows="10" required></textarea>
-        </div>
-
-        <input type="submit" value="Submit" class="btn" id="formSubmit">
-      </form>
-
-      <div class="contact">
-        <ul class="icons">
-          <li>
-            <a
-              class="contactIcon animated bounceInDown githubLink"
-              href=""
-              target="_blank"
-              rel="noopener"
-            >
-              <i class="fab fa-github-alt" title="Github Logo"></i>
-            </a>
-          </li>
-          <li>
-            <a
-              class="contactIcon animated bounceInDown linkedInLink"
-              href=""
-              target="_blank"
-              rel="noopener"
-            >
-              <i class="fab fa-linkedin" title="LinkedIn Logo"></i>
-            </a>
-          </li>
-        </ul>
   
         <span class="emailSpan">
-          Email: <a href="mailto:Solsantari@gmail.com" class="emailLink">Solsantari@gmail.com</a>
+          Email: <a href="mailto:SolSantari@gmail.com" class="emailLink">SolSantari@gmail.com</a>
         </span>
       </div>
 
@@ -322,20 +283,26 @@
   <!--*** SCRIPTS ***-->
   <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0.0/dist/smooth-scroll.polyfills.min.js"></script>
 
-  <script type="text/javascript">
-
-    const nav = document.getElementById('nav')
-    window.onscroll = function(){
-      if(window.pageYOffset >= 100){
-          nav.style.position = "fixed";
-          nav.style.top = "0px";
-          nav.style.width = "100%"
-      }else{
-          nav.style.position = "absolute";
-          nav.style.top = "100px";
-          nav.style.width = "100%"
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  
+  <!-- ***SMOOTH SCROLL*** -->
+  <script>
+  $(function() {
+    $('a[href*=#]:not([href=#])').click(function() {
+      if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+        var target = $(this.hash);
+        target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+        if (target.length) {
+          $('html,body').animate({
+            scrollTop: target.offset().top-128
+          }, 1000);
+          return false;
+        }
       }
-    }
-    </script>
+    });
+  });
+  </script>
+
+  <script src="index.js"></script>
 </body>
 </html>
