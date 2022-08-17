@@ -291,6 +291,11 @@ h1{
   transform: rotate(360deg) scale(.97);
 }
 
+.emailLink{
+  color: rgb(89, 156, 133);
+  animation-delay: .1s
+}
+
 .githubLink {
   color: rgb(102, 43, 129);
 }
